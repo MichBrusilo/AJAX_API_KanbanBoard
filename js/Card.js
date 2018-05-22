@@ -15,11 +15,10 @@ function Card(id, name) {
 			 self.removeCard();
 		 });
 		 
-		 $cardDeleteButton.append($cardDeleteSymbol);
-		 $card.append($cardDeleteButton).append($cardDescription);
-		 
-		 console.log($card);
-		 return $card;
+		card.append(cardDeleteBtn);
+		cardDescription.text(self.name);
+		card.append(cardDescription)
+		return card;
 	}
 }
 
