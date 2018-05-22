@@ -58,19 +58,3 @@ Column.prototype = {
 		  }
 		});
 	},
-	renameColumn: function() {
-		var self = this;
-		var columnName = prompt("Enter the name of the column");
-		$.ajax({
-			url: baseUrl + '/column/' + self.id,
-			method: 'PUT',
-			data: {
-				name: columnName,
-			},
-			success: function(response){
-				var columnTitle = $(self.element[0].children[0]);
-				columnTitle.text(columnName);
-			}
-		})
-	}
-};
