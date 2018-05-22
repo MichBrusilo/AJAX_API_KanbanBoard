@@ -1,0 +1,82 @@
+* {box-sizing: border-box;}
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(https://images.pexels.com/photos/235994/pexels-photo-235994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+}
+
+.board {
+  margin: 20px 30px;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  font-size: 3em;
+  color: #d63031;
+}
+
+.create-column {
+  border-color: #00b894;
+  color: #00b894;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 10px;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: #00b894;
+  background-color: #fdcb6e;
+  height: 600px;
+}
+
+.column {
+  background-color: #fdcb;
+  min-width: 300px;
+  min-height: 50vh;
+  margin: 10px;
+  position: relative;
+}
+
+.btn-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: red;
+  width: 22px;
+  height: 22px;
+  border: 0;
+}
+.add-card {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #e17055;
+}
+
+.card {
+  box-sizing: border-box;
+  display: block;
+  border: 1px solid #81ecec;
+  margin: 10px;
+  padding: 10px;
+  background-color: #55efc4;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+}
+ul li {
+  list-style-type: none;
+}
+.card-placeholder {
+  box-sizing: border-box;
+  display: block;
+  height: 80px;
+  margin: 10px;
+  background-color: lightyellow;
+}
+
+.column-card-list {
+  padding: 10px; 
+}
