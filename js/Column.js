@@ -57,4 +57,5 @@ Column.prototype = {
 			self.element.remove();
 		  }
 		});
-	},
+    },
+}
