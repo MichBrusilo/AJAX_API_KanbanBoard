@@ -79,5 +79,6 @@ ul li {
 
 .column-card-list {
   padding: 10px; 
+  min-height: 80px;
 }
 
