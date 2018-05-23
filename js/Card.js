@@ -9,13 +9,14 @@ function Card(id, name) {
 	function createCard() {
 		 var $card = $('<li>').addClass('card');
 		 var $cardDescription = $('<p>').addClass('card-description').text(self.name);
-		 var $cardDeleteButton = $('<button>').addClass('card-delete btn');
-		 
-		 $cardDeleteButton.click(function(){
+		// var $cardDeleteButton = $('<button>').addClass('card-delete btn');
+		 var $cardDelete = $('<button>').addClass('btn-delete').text('x');
+		
+		 $cardDelete.click(function(){
 			 self.removeCard();
 		 });
 		 
-		card.append(cardDeleteBtn);
+		card.append(cardDelete);
 		cardDescription.text(self.name);
 		card.append(cardDescription)
 		return card;
